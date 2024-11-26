@@ -12,12 +12,12 @@ doctrine:
         mappings:
             Invoice:
                 is_bundle: false
-                type: annotation
+                type: attribute
                 dir: '%kernel.project_dir%/src/Core/Invoice/Domain'
                 prefix: App\Core\Invoice\Domain\Invoice
             User:
                 is_bundle: false
-                type: annotation
+                type: attribute
                 dir: '%kernel.project_dir%/src/Core/User/Domain'
                 prefix: App\Core\User\Domain\User
 

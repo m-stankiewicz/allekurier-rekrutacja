@@ -27,7 +27,6 @@ class GetInvoices extends Command
         $invoices = $this->bus->dispatch(new GetInvoicesByStatusAndAmountGreaterQuery(
             $input->getArgument('amount')
         ));
-
         /** @var InvoiceDTO $invoice */
         foreach ($invoices as $invoice) {
             $output->writeln($invoice->id);
